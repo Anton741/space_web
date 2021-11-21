@@ -105,7 +105,7 @@ console.log(param);
             <div className="main__content">
               <h3 className="main__subtitle">{menu[currentItem].name}</h3>
               <h1 className="main__title">{menu[currentItem].name}</h1>
-              {articles && param === 'log' && (
+              {articles && currentItem === 'log' && (
                 <ArticlesList articles={articles} onOpen={openArticle} />
               ) || <h1>Loading....</h1>}
               {param === 'host' && <Hosts />}

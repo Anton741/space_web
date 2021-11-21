@@ -107,7 +107,7 @@ console.log(param);
               <h1 className="main__title">{menu[currentItem].name}</h1>
               {articles && param === 'log' && (
                 <ArticlesList articles={articles} onOpen={openArticle} />
-              )}
+              ) || <h1>Loading....</h1>}
               {param === 'host' && <Hosts />}
               {param === 'vps' && <Vpn />}
               {param === 'account' && <UserInfo />}
